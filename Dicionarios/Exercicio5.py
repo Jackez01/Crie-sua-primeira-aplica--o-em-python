@@ -1,0 +1,1 @@
+#Escreva um código que conte a frequência de cada palavra em uma frase utilizando um dicionário.
