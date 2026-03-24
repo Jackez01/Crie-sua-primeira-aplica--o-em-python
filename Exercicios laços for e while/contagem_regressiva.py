@@ -4,3 +4,22 @@
 # Para números pares, exiba: "Faltam apenas <número> segundos - Não perca essa oportunidade!".
 # Para números ímpares, exiba: "A contagem continua: <número> segundos restantes.".
 # Ao final da contagem, exiba a mensagem: "Aproveite a promoção agora!".
+
+# contador = 11
+
+# while 11 >= contador > 0:
+#     contador -= 1
+#     if contador %2 == 0:
+#         print(f'Falta apenas {contador} - Não perca essa oportunidade')
+#     else:
+#         print(f'A contagem continua: {contador} segundos restantes!')
+
+# print('Aproveite a promoção agora!')
+
+for segundos in range(10, 0, -1):
+    if segundos %2 == 0:
+        print(f"Faltam apenas {segundos} segundos - Não perca essa oportunidade!")
+    else:
+        print(f"A contagem continua: {segundos} segundos restantes.")
+
+print("Aproveite a promoção agora!")

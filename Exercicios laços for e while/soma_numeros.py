@@ -2,4 +2,10 @@
 #  gostaria de calcular a soma total desses produtos para entender o desempenho financeiro semanal.
 # valores = [10, 20, 30, 40, 50]
 # Crie um programa para implementar a soma.
+soma = 0
+valores = [10, 20, 30, 40, 50]
 
+for valor in valores:
+    soma += valor
+
+print(soma)

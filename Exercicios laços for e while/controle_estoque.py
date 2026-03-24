@@ -4,3 +4,11 @@
 # o sistema deve informar o usuário e atualizar a quantidade disponível.
 # Crie um programa que simule as vendas de um livro com o estoque inicial de 5 exemplares.
 #  O programa deve exibir a mensagem "Venda realizada! Estoque restante: <quantidade>" a cada venda e, ao final, exibir a mensagem "Estoque esgotado".
+
+livros = 5
+
+while livros > 0:
+    livros -= 1
+    print(f'Venda realizada! Estoque restante {livros}')
+
+print('Estoque esgotado')

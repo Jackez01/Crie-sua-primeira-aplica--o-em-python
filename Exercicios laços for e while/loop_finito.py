@@ -7,3 +7,8 @@
 
 #Qual é o problema do código de André e como resolver? Compartilhe com a gente no fórum!
 
+contador = 0
+
+while contador < 10:
+    contador += 1
+    print("Processando dados...")

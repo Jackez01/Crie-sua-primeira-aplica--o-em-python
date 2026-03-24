@@ -1,10 +1,15 @@
-numero1 = int(input('Informe os dias para atividade: '))
-numero2 = int(input('Informe os dias para atividade: '))
-numero3 = int(input('Informe os dias para atividade: '))
+while True:
 
-tempo_total = numero1+numero2+numero3
+    login = input('Digite um nome de usuário: ')
+    password = input('Digite uma senha: ')
 
-if numero1<0 or numero2<0 or numero3<0:
-    print('Erro: Digite valores maiores que 0.')
-else:
-    print(f'O valor total de dias é de {tempo_total}')
+    if len(login) < 5:
+        print('Digite um login com pelo menos 5 caracteres')
+        continue
+    
+    if len(password) < 8:
+        print('Digite uma senha com pelo menos 8 caracteres')
+        continue
+    
+    print('Cadastro realizado com sucesso!')
+    break
