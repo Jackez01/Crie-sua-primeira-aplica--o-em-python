@@ -1,10 +1,17 @@
-def soma_valores(valores):
-    soma = 0
-    for valor in valores:
-        soma += int(valor)
-    return soma
+
+def soma(x):
+    #return x * (x + 1) // 2 --> poderia fazer assim que o código ficaria mais limpo
+    
+    i = 0
+    somatoria = 0
+    
+    while i< x:
         
+        i += 1
+        somatoria +=i
+    return somatoria
 
-valores = input("Digite os valores das vendas: ").split()
 
-print(f"A soma dos valores são {soma_valores(valores)}")
+
+numero = int(input('Digite um número: '))
+print(f'A somatoria é {soma(numero)}')
