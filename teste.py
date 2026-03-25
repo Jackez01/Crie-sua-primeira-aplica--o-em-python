@@ -1,15 +1,10 @@
-while True:
+def soma_valores(valores):
+    soma = 0
+    for valor in valores:
+        soma += int(valor)
+    return soma
+        
 
-    login = input('Digite um nome de usuário: ')
-    password = input('Digite uma senha: ')
+valores = input("Digite os valores das vendas: ").split()
 
-    if len(login) < 5:
-        print('Digite um login com pelo menos 5 caracteres')
-        continue
-    
-    if len(password) < 8:
-        print('Digite uma senha com pelo menos 8 caracteres')
-        continue
-    
-    print('Cadastro realizado com sucesso!')
-    break
+print(f"A soma dos valores são {soma_valores(valores)}")
