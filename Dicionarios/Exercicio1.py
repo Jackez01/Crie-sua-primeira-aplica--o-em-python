@@ -3,3 +3,4 @@
 pessoa = {'nome':'Lucas', 'idade':19, 'cidade':'Paulínia'}
 
 print(pessoa['nome'])
+#teste
