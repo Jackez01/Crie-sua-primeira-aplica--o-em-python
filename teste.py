@@ -1,17 +1,18 @@
-
-def soma(x):
-    #return x * (x + 1) // 2 --> poderia fazer assim que o código ficaria mais limpo
-    
-    i = 0
-    somatoria = 0
-    
-    while i< x:
-        
-        i += 1
-        somatoria +=i
-    return somatoria
+def calcular_gorjeta(porcentagem_gorjeta, valor_conta):
+    return (porcentagem_gorjeta/100) * valor_conta + valor_conta
 
 
+gorjeta = float(input('Digite o valor da gorjeta: '))
+valor = float(input('Digite o valor da conta: '))
 
-numero = int(input('Digite um número: '))
-print(f'A somatoria é {soma(numero)}')
+print(f'O valor da conta ficou: {calcular_gorjeta(gorjeta, valor):.2f}')
+
+# def calcular_gorjeta(porcentagem, valor):
+#     gorjeta = (porcentagem/100) * valor
+#     total = valor + gorjeta
+#     return gorjeta, total
+
+# gorjeta, total = calcular_gorjeta(gorjeta, valor)
+
+# print(f'Gorjeta: R$ {gorjeta:.2f}')
+# print(f'Total: R$ {total:.2f}')
