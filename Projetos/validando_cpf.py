@@ -5,3 +5,9 @@
 
 # Crie um programa que peça ao usuário um número de CPF e verifique
 # se ele tem 11 dígitos e contém apenas números.
+
+def validador(cpf_digitado):
+    if cpf_digitado == int:
+        print('CPF válido')
+
+cpf = int(input('Digite seu CPF: '))

@@ -1,11 +1,12 @@
-def calcular_gorjeta(porcentagem_gorjeta, valor_conta):
-    return (porcentagem_gorjeta/100) * valor_conta + valor_conta
+def validador(cpf_digitado):
+    if cpf_digitado == int:
+        print('CPF válido')
+        return validador
+    else: 
+        print('CPF inválido')
 
-
-gorjeta = float(input('Digite o valor da gorjeta: '))
-valor = float(input('Digite o valor da conta: '))
-
-print(f'O valor da conta ficou: {calcular_gorjeta(gorjeta, valor):.2f}')
+cpf = int(input(f'Digite seu CPF: '))
+print({validador(cpf)})
 
 # def calcular_gorjeta(porcentagem, valor):
 #     gorjeta = (porcentagem/100) * valor
