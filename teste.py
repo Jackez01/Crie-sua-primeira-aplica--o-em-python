@@ -1,11 +1,11 @@
 def validador(cpf_digitado):
-    if cpf_digitado == int:
-        print('CPF válido')
-        return validador
-    else: 
-        print('CPF inválido')
+    if not cpf_digitado.isdigit() :
+        return 'Erro: digite apenas números.'
+    if len(cpf_digitado) != 11: 
+        return 'Digite 11 números do cpf.'
+    return 'CPF valido'
 
-cpf = int(input(f'Digite seu CPF: '))
+cpf = input(f'Digite seu CPF: ')
 print({validador(cpf)})
 
 # def calcular_gorjeta(porcentagem, valor):
