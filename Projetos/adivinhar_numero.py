@@ -21,4 +21,5 @@ def jogo():
         elif escolha_jogador < numero:
             print('Escolha muito baixa, tente novamente!')
         
+jogo()
 
