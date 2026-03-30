@@ -1,19 +1,17 @@
-def validador(cpf_digitado):
-    if cpf_digitado == int:
-        print('CPF válido')
-        return validador
-    else: 
-        print('CPF inválido')
+import random
 
-cpf = int(input(f'Digite seu CPF: '))
-print({validador(cpf)})
+def jogo():
+    numero = random.randint(1, 100)
+    escolha_jogador = int(input('Escolha um número entre 1 e 100: '))
 
-# def calcular_gorjeta(porcentagem, valor):
-#     gorjeta = (porcentagem/100) * valor
-#     total = valor + gorjeta
-#     return gorjeta, total
+    while escolha_jogador != numero:
+        if escolha_jogador > numero:
+            print('Escolha muito alta, tente novamente')
 
-# gorjeta, total = calcular_gorjeta(gorjeta, valor)
+        elif escolha_jogador < numero:
+            print('Escolha muito baixa, tente novamente!')
+        
+        escolha_jogador = int(input('Escolha um número entre 1 e 100: '))
+    print(f'Parabéns, você acertou número: {numero}')
 
-# print(f'Gorjeta: R$ {gorjeta:.2f}')
-# print(f'Total: R$ {total:.2f}')
+jogo()
