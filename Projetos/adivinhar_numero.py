@@ -12,14 +12,24 @@
 import random
 
 def jogo():
+    #escolhe um número aleatório entre 1 e 100
     numero = random.randint(1, 100)
-    escolha_jogador = int(input('Escolha um número entre 1 e 100: '))
+  
+    while True:
+        try:         
+            escolha_jogador = int(input('Escolha um número entre 1 e 100: '))
 
-    while escolha_jogador != numero:
-        if escolha_jogador > numero:
-            print('Escolha muito alta, tente novamente')
-        elif escolha_jogador < numero:
-            print('Escolha muito baixa, tente novamente!')
-        
+            if not 0 <= escolha_jogador <= 100:
+                raise ValueError("Número fora do intervalo! Digite um número entre 1 e 100.")
+            if escolha_jogador > numero:
+                print('Escolha muito alta, tente novamente')
+            elif escolha_jogador < numero:
+                print('Escolha muito baixa, tente novamente!')
+            else:
+                 print(f'Parabéns você acertou o número: {numero}')
+                 break
+
+        except ValueError as e:
+            print(f'Entrada invalida {e}')
 jogo()
 

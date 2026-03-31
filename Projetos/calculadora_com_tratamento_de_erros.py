@@ -1,3 +1,12 @@
+# Carlos está criando uma calculadora simples, mas quer garantir que o programa não 
+# quebre se o usuário digitar valores inválidos, ele precisa tratar os erros.
+
+# Crie uma calculadora que permita ao usuário escolher entre soma, subtração, multiplicação e divisão.
+# Além de modularizar o código em funções, use try-except para tratar erros de entrada inválida, que consiste em:
+
+# Caso digite um caractere em vez de número | exceção a ser lançada: ValueError;
+# Caso tente fazer uma divisão por 0 | exceção a ser lançada: ZeroDivisionError.
+
 def calculadora(x, y):
     
         
@@ -15,7 +24,7 @@ def calculadora(x, y):
                 raise ZeroDivisionError
             return x/y
         else:
-            print('Entrada inválida')
+            print('Escolha inválida')
             
     
 try:
