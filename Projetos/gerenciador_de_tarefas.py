@@ -4,3 +4,8 @@
 # Crie um programa com um menu interativo que permita ao usuário adicionar,
 # visualizar e remover tarefas. Use uma lista para armazenar as tarefas.
 
+print('Escolha uma das opções:' \
+'1.Adicionar tarefa' \
+'2. Visualizar tarefa' \
+'3. Remover tarefa' \
+'4. Sair')
