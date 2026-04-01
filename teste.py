@@ -16,7 +16,16 @@ def visualizar_tarefas():
     print (f'Essas são suas tarefas:\n {tarefas}')
     voltar_inicio()
 
-# def remover_tarefa():
+def remover_tarefa():
+    tarefa_escolhida = input('Digite a tarefa que você quer remover: ')
+    for tarefa in tarefas:
+        if tarefa_escolhida == tarefa:
+            tarefas.remove(tarefa_escolhida)
+        else:
+            print('Tarefa inválida!')
+
+    print('Tarefa removida com sucesso!')
+    voltar_inicio()
 
 
 # def finalizar():
